@@ -1,3 +1,21 @@
 /*
 !.gitignore
 !.github
+!.zshrc
+!.pip
+!.gtkrc-2.0
+!.dircolors
+# config file
+!.config/*-flags.conf
+!.config/cava
+!.config/fuzzel
+!.config/gtk-3.0
+!.config/hypr
+!.config/kitty
+!.config/neofetch
+!.config/nvim
+!.config/pip
+!.config/proxy
+!.config/ranger
+!.config/user-dirs.dirs
+!.config/waybar

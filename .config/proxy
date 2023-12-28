@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# HTTP Proxy
+if [[ "$(uname)" = Darwin ]]; then
+  echo "http://127.0.0.1:10809" # Surge Mac
+else
+  echo "http://127.0.0.1:10809" # polipo
+fi
+
+# No Proxy
+echo "localhost,127.0.0.1"

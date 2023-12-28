@@ -1,0 +1,18 @@
+#!/bin/bash
+
+swaylock \
+	--screenshots \
+	--clock \
+	--indicator \
+	--indicator-radius 100 \
+	--indicator-thickness 10 \
+	--effect-blur 10x3 \
+	--effect-vignette 0.8:0.5 \
+	--ring-color 080808 \
+	--key-hl-color 58B2DC \
+	--line-color 00000000 \
+	--inside-color 43434388 \
+	--separator-color 00000000 \
+	--grace 5 \
+	--submit-on-touch \
+	--fade-in 0.1

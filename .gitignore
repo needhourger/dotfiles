@@ -6,6 +6,9 @@
 !.gtkrc-2.0
 !.dircolors
 # config file
+!.config/
+.config/*
+# detail config
 !.config/*-flags.conf
 !.config/cava
 !.config/fuzzel

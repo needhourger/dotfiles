@@ -1,0 +1,151 @@
+* {
+  border: none;
+  font-family: Cascadia;
+  font-size: 13px;
+  font-weight: 700;
+  min-height: 0;
+}
+
+window#waybar {
+  background: transparent;
+  color: white;
+}
+
+tooltip {
+  background: rgba(43, 48, 59, 0.5);
+  border: 1px solid rgba(100, 114, 125, 0.5);
+  font-size: 20px;
+}
+tooltip label {
+  color: white;
+}
+
+#user {
+	margin: 0 5px;
+	padding: 5px;
+	font-size: 20px
+}
+
+#workspaces {
+  background-color: rgba(255, 255, 255, 0.25);
+  margin: 3px 0 3px 3px;
+  padding: 2px 10px 2px 10px;
+  border: 0;
+  border-radius: 20px 0 0 20px;
+}
+
+#workspaces button {
+  background: transparent;
+  color: white;
+  border-radius: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#workspaces button.focused {
+  background: #64727D;
+}
+
+#workspaces button.active {
+  color:pink;
+}
+
+#tray {
+  background-color: rgba(255, 255, 255, 0.65);
+  margin: 3px;
+  padding: 0 8px;
+  border: 1px solid rgba(100, 114, 125, 0.5)
+}
+
+#memory {
+  color: greenyellow;
+  padding: 0 5px 0 5px;
+  margin: 3px 0;
+  background-color: rgba(0,0,0,0.8);
+}
+
+#disk {
+  color: rgb(26, 194, 255);
+  padding: 0 5px 0 5px;
+  background: rgba(0,0,0,0.8);
+  margin: 3px 0;
+}
+
+#backlight {
+  color: yellow;
+}
+
+.modules-center {
+  padding: 0 15px;
+}
+
+#hardware {
+  margin: 3px 0;
+  padding: 0 5px;
+  background-color: rgba(43, 48, 59, 0.9);
+}
+
+#network {
+  color: aqua;
+  padding: 0 5px 0 5px;
+  background: transparent;
+  margin: 3px 0;
+}
+#network.disabled {
+  color: grey;
+}
+#network.disconnected {
+  color: orangered;
+}
+#network.linked {
+  color:cornflowerblue;
+}
+#network.ethernet {
+  color: whitesmoke;
+}
+#network.wifi {
+  color: aquamarine;
+}
+
+
+#clock {
+  font-weight: 600;
+  color: white;
+  font-size: 18px;
+  border-radius: 15px;
+  margin: 1px;
+  padding: 0 15px 0 15px;
+  background: rgba(255,255,255,0.45);
+}
+
+#window {
+  font-size: 18px;
+  color: rgba(8,8,8,0.75);
+  padding: 0 10px 0 10px;
+  margin: 3px 0 3px 0;
+  border-left: 1px solid transparent;
+  border-radius: 0 25px 25px 0;
+  background: 
+	linear-gradient(to right, #58b2dc, #FEDFE1, #FCFAF2, rgba(255,255,255,0.45) 85%)
+}
+
+#cpu {
+  margin: 3px 0 3px 0;
+  padding: 0 5px 0 15px;
+  border-radius: 25px 0 0 25px;
+  background: rgba(255,255,255,0.7);
+}
+
+#temperature {
+  padding: 0 5px 0 5px;
+}
+
+#bluetooth {
+  margin: 3px 0 3px 0;
+  padding: 0 5px 0 5px;
+  background-color: rgba(0,0,0,0.8)
+}
+
+#pulseaudio {
+  padding: 0 5px 0 5px;
+}

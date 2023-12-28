@@ -22,3 +22,7 @@
 !.config/ranger
 !.config/user-dirs.dirs
 !.config/waybar
+# wallpaper
+!Pictures
+Picures/*
+!Pictures/Wallpapers

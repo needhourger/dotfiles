@@ -58,6 +58,7 @@ alias vim="nvim"
 alias ls="ls --color=auto"
 alias ll="ls -lahF --color --time-style=long-iso"
 alias gitc='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias neofetch='neofetch | lolcat'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

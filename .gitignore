@@ -7,6 +7,7 @@
 !.dircolors
 # config file
 .config/*
+!.config
 # detail config
 !.config/*-flags.conf
 !.config/cava
@@ -23,5 +24,6 @@
 !.config/waybar
 !.config/dunst
 # wallpaper
-Picures/*
+Pictures/*
+!Pictures
 !Pictures/Wallpapers

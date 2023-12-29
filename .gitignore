@@ -6,7 +6,6 @@
 !.gtkrc-2.0
 !.dircolors
 # config file
-!.config/
 .config/*
 # detail config
 !.config/*-flags.conf
@@ -24,6 +23,5 @@
 !.config/waybar
 !.config/dunst
 # wallpaper
-!Pictures
 Picures/*
 !Pictures/Wallpapers

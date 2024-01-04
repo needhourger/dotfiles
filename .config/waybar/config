@@ -61,7 +61,7 @@
       "default": ""
     },
     "persistent_workspaces": {
-      "*": 6, 
+      "*": 4, 
 	  "1": ["HDMI-A-1"]
     },
     "on-scroll-up": "hyprctl dispatch workspace e+1",

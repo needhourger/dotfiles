@@ -1,7 +1,7 @@
 # Linux Dotfile
 
 ## Rendering
-![](./img/2024-01-05-112053_hyprshot.png)
+![](./img/1.png)
 
 ## Details
 * :computer: Operation System: [Archlinux](https://archlinux.org/)

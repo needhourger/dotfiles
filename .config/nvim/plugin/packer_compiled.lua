@@ -140,29 +140,34 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/yuuki/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
+  },
+  ["vim-wakatime"] = {
+    loaded = true,
+    path = "/home/yuuki/.local/share/nvim/site/pack/packer/start/vim-wakatime",
+    url = "https://github.com/wakatime/vim-wakatime"
   }
 }
 
 time([[Defining packer_plugins]], false)
 -- Conditional loads
-time([[Conditional loading of SmoothCursor.nvim]], true)
-  require("packer.load")({"SmoothCursor.nvim"}, {}, _G.packer_plugins)
-time([[Conditional loading of SmoothCursor.nvim]], false)
-time([[Conditional loading of bufferline.nvim]], true)
-  require("packer.load")({"bufferline.nvim"}, {}, _G.packer_plugins)
-time([[Conditional loading of bufferline.nvim]], false)
-time([[Conditional loading of statuscol.nvim]], true)
-  require("packer.load")({"statuscol.nvim"}, {}, _G.packer_plugins)
-time([[Conditional loading of statuscol.nvim]], false)
-time([[Conditional loading of coc.nvim]], true)
-  require("packer.load")({"coc.nvim"}, {}, _G.packer_plugins)
-time([[Conditional loading of coc.nvim]], false)
-time([[Conditional loading of lualine.nvim]], true)
-  require("packer.load")({"lualine.nvim"}, {}, _G.packer_plugins)
-time([[Conditional loading of lualine.nvim]], false)
 time([[Conditional loading of modes.nvim]], true)
   require("packer.load")({"modes.nvim"}, {}, _G.packer_plugins)
 time([[Conditional loading of modes.nvim]], false)
+time([[Conditional loading of bufferline.nvim]], true)
+  require("packer.load")({"bufferline.nvim"}, {}, _G.packer_plugins)
+time([[Conditional loading of bufferline.nvim]], false)
+time([[Conditional loading of coc.nvim]], true)
+  require("packer.load")({"coc.nvim"}, {}, _G.packer_plugins)
+time([[Conditional loading of coc.nvim]], false)
+time([[Conditional loading of SmoothCursor.nvim]], true)
+  require("packer.load")({"SmoothCursor.nvim"}, {}, _G.packer_plugins)
+time([[Conditional loading of SmoothCursor.nvim]], false)
+time([[Conditional loading of statuscol.nvim]], true)
+  require("packer.load")({"statuscol.nvim"}, {}, _G.packer_plugins)
+time([[Conditional loading of statuscol.nvim]], false)
+time([[Conditional loading of lualine.nvim]], true)
+  require("packer.load")({"lualine.nvim"}, {}, _G.packer_plugins)
+time([[Conditional loading of lualine.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

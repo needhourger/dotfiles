@@ -9,6 +9,9 @@ return require('packer').startup(function(use)
   -- themes
   use { "folke/tokyonight.nvim" }
 
+  --wakatime
+  use 'wakatime/vim-wakatime'
+
   use { 'nvim-lualine/lualine.nvim',
 	requires = { 'nvim-tree/nvim-web-devicons', opt = true },
 	cond = [[not vim.g.vscode]] 

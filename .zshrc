@@ -68,3 +68,6 @@ source /usr/share/nvm/init-nvm.sh
 
 # Miniconda3
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
+
+# Environment variable
+export PATH=$PATH:/home/yuuki/.go/bin

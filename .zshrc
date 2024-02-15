@@ -16,7 +16,7 @@ zinit light romkatv/powerlevel10k
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 zinit light zdharma-continuum/fast-syntax-highlighting
-zinit light zdharma-continuum/history-search-multi-word
+# zinit light zdharma-continuum/history-search-multi-word
 zinit light arzzen/calc.plugin.zsh
 zinit light zpm-zsh/clipboard
 zinit light aubreypwd/zsh-plugin-download

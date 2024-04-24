@@ -23,5 +23,6 @@ set cursorline
 set ignorecase
 
 lua require('plugins')
+lua require('keybindings')
 
 colorscheme tokyonight-night 

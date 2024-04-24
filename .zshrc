@@ -16,7 +16,7 @@ zinit light romkatv/powerlevel10k
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 zinit light zdharma-continuum/fast-syntax-highlighting
-# zinit light zdharma-continuum/history-search-multi-word
+zinit light zdharma-continuum/history-search-multi-word
 zinit light arzzen/calc.plugin.zsh
 zinit light zpm-zsh/clipboard
 zinit light aubreypwd/zsh-plugin-download
@@ -24,8 +24,8 @@ zinit light oz/safe-paste
 zinit light wbingli/zsh-wakatime
 zinit light marlonrichert/zsh-autocomplete
 # Yi Yan
-zinit ice lucid wait=0
-zinit light derry96/hitokoto
+# zinit ice lucid wait=0
+# zinit light derry96/hitokoto
 # oh-my-zsh plugins
 zinit snippet OMZP::archlinux
 zinit snippet OMZP::sudo
@@ -59,6 +59,7 @@ alias ls="ls --color=auto"
 alias ll="ls -lahF --color --time-style=long-iso"
 alias gitc='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias neofetch='neofetch | lolcat'
+alias mamba='micromamba'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

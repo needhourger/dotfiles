@@ -1,4 +1,6 @@
+# default
 /*
+######
 !.gitignore
 !.github
 !.zshrc
@@ -27,3 +29,8 @@
 Pictures/*
 !Pictures
 !Pictures/Wallpapers
+
+# Ignore files
+__pycache__/
+
+

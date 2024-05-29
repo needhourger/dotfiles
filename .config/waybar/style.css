@@ -1,9 +1,9 @@
 * {
   border: none;
-  font-family: Cascadia;
+  font-family: 'CaskaydiaMono NF','Noto Sans Mono CJK SC';
   font-size: 13px;
-  font-weight: 700;
   min-height: 0;
+  font-weight: 600;
 }
 
 window#waybar {
@@ -23,7 +23,6 @@ tooltip label {
 #user {
 	margin: 0 5px;
 	padding: 5px;
-	font-size: 20px
 }
 
 #workspaces {

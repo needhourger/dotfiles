@@ -1,0 +1,33 @@
+MenuBar=Disabled
+
+[ContextMenu]
+ShowCopyMoveMenu=true
+
+[General]
+GlobalViewProps=false
+OpenExternallyCalledFolderInNewTab=true
+OpenNewTabAfterLastTab=true
+RememberOpenedTabs=false
+ShowFullPathInTitlebar=true
+Version=202
+ViewPropsTimestamp=2024,6,5,9,59,31.04
+
+[IconsMode]
+PreviewSize=80
+
+[InformationPanel]
+dateFormat=ShortFormat
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=32
+
+[MainWindow]
+MenuBar=Disabled
+ToolBarsMovable=Disabled
+
+[PlacesPanel]
+IconSize=32
+
+[PreviewSettings]
+Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail

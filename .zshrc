@@ -8,24 +8,13 @@ fi
 # Zinit init
 source /usr/share/zinit/zinit.zsh
 
-# Theme
-zinit ice depth="1"
-zinit light romkatv/powerlevel10k
+####
+# oh-my-zsh libs
+zinit snippet OMZ::lib/completion.zsh
+zinit snippet OMZ::lib/history.zsh
+zinit snippet OMZ::lib/git.zsh
 
-# Plugins
-zinit light zsh-users/zsh-autosuggestions
-zinit light zsh-users/zsh-completions
-zinit light zdharma-continuum/fast-syntax-highlighting
-zinit light zdharma-continuum/history-search-multi-word
-zinit light arzzen/calc.plugin.zsh
-zinit light zpm-zsh/clipboard
-zinit light aubreypwd/zsh-plugin-download
-zinit light oz/safe-paste
-zinit light wbingli/zsh-wakatime
-zinit light marlonrichert/zsh-autocomplete
-# Yi Yan
-# zinit ice lucid wait=0
-# zinit light derry96/hitokoto
+####
 # oh-my-zsh plugins
 zinit snippet OMZP::archlinux
 zinit snippet OMZP::sudo
@@ -34,19 +23,44 @@ zinit snippet OMZP::vscode
 zinit snippet OMZP::encode64
 zinit snippet OMZP::npm
 zinit snippet OMZP::git
+# zinit snippet OMZP::git-commit
 zinit snippet OMZP::node
-zinit ice svn; zinit snippet OMZP::nvm
-zinit ice svn; zinit snippet OMZP::docker
-zinit ice svn; zinit snippet OMZP::docker-compose
-zinit ice svn; zinit snippet OMZP::extract
-zinit ice svn; zinit snippet OMZP::pip
-zinit ice svn; zinit snippet OMZP::yarn
-zinit ice svn; zinit snippet OMZP::z
-zinit ice svn; zinit snippet OMZP::shell-proxy
-# oh-my-zsh libs
-zinit snippet OMZ::lib/completion.zsh
-zinit snippet OMZ::lib/history.zsh
-zinit snippet OMZ::lib/git.zsh
+zinit snippet OMZP::docker
+zinit snippet OMZP::docker-compose
+zinit snippet OMZP::extract
+zinit snippet OMZP::pip
+zinit snippet OMZP::yarn
+zinit snippet OMZP::z
+zinit snippet OMZP::golang
+zinit snippet OMZP::kitty
+zinit snippet OMZP::qrcode
+zinit snippet OMZP::shell-proxy
+zinit snippet OMZP::web-search
+zinit ice wait lucid
+zinit snippet OMZP::thefuck
+zinit ice wait lucid
+zinit snippet OMZP::nvm
+
+# Theme
+zinit ice depth="1"
+zinit light romkatv/powerlevel10k
+
+# Plugins
+zinit light arzzen/calc.plugin.zsh
+zinit light zpm-zsh/clipboard
+zinit light aubreypwd/zsh-plugin-download
+zinit light oz/safe-paste
+zinit light wbingli/zsh-wakatime
+zinit light zsh-users/zsh-completions
+zinit light marlonrichert/zsh-autocomplete
+zinit light zsh-users/zsh-autosuggestions
+zinit light zsh-users/zsh-history-substring-search
+zinit ice wait lucid
+zinit light zdharma-continuum/fast-syntax-highlighting
+# Yi Yan
+# zinit ice lucid wait=0
+# zinit light derry96/hitokoto
+
 
 # Completion
 autoload -Uz compinit
@@ -59,7 +73,6 @@ alias ls="ls --color=auto"
 alias ll="ls -lahF --color --time-style=long-iso"
 alias gitc='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias neofetch='neofetch | lolcat'
-alias mamba='micromamba'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

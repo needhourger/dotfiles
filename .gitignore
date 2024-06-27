@@ -25,6 +25,10 @@
 !.config/user-dirs.dirs
 !.config/waybar
 !.config/dunst
+!.config/kdeglobals
+!.config/dolphinrc
+!.config/htop
+!.config/swaylock
 # wallpaper
 Pictures/*
 !Pictures

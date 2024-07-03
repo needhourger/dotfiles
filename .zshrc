@@ -7,6 +7,29 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+setopt RE_MATCH_PCRE   # _fix-omz-plugin function uses this regex style
+
+# Workaround for zinit issue#504: remove subversion dependency. Function clones all files in plugin
+# directory (on github) that might be useful to zinit snippet directory. Should only be invoked
+# via zinit atclone"_fix-omz-plugin"
+_fix-omz-plugin() {
+  if [[ ! -f ._zinit/teleid ]] then return 0; fi
+  if [[ ! $(cat ._zinit/teleid) =~ "^OMZP::.*" ]] then return 0; fi
+  local OMZP_NAME=$(cat ._zinit/teleid | sed -n 's/OMZP:://p')
+  git clone --quiet --no-checkout --depth=1 --filter=tree:0 https://github.com/ohmyzsh/ohmyzsh
+  cd ohmyzsh
+  git sparse-checkout set --no-cone plugins/$OMZP_NAME
+  git checkout --quiet
+  cd ..
+  local OMZP_PATH="ohmyzsh/plugins/$OMZP_NAME"
+  local file
+  for file in ohmyzsh/plugins/$OMZP_NAME/*~(.gitignore|*.plugin.zsh)(D); do
+    local filename="${file:t}"
+    echo "Copying $file to $(pwd)/$filename..."
+    cp $file $filename
+  done
+  rm -rf ohmyzsh
+}
 
 ####
 # oh-my-zsh libs
@@ -18,6 +41,7 @@ zinit snippet OMZL::grep.zsh
 zinit snippet OMZL::nvm.zsh
 zinit snippet OMZL::history.zsh
 zinit snippet OMZL::git.zsh
+zinit snippet OMZL::prompt_info_functions.zsh
 
 ####
 # oh-my-zsh plugins
@@ -27,25 +51,24 @@ zinit snippet OMZP::cp
 zinit snippet OMZP::vscode
 zinit snippet OMZP::encode64
 zinit snippet OMZP::npm
-zinit ice atload"unalias grv"
-zinit snippet OMZP::git
-zinit snippet OMZP::git-commit
 zinit snippet OMZP::node
-zinit snippet OMZP::docker
-zinit snippet OMZP::docker-compose
-zinit snippet OMZP::extract
-zinit snippet OMZP::pip
-zinit snippet OMZP::yarn
-zinit snippet OMZP::z
-zinit snippet OMZP::golang
 zinit snippet OMZP::kitty
 zinit snippet OMZP::qrcode
-zinit snippet OMZP::shell-proxy
 zinit snippet OMZP::web-search
-zinit ice wait lucid
 zinit snippet OMZP::thefuck
-zinit ice wait lucid
 zinit snippet OMZP::nvm
+zinit snippet OMZP::git
+zinit snippet OMZP::git-commit
+zinit wait lucid for \
+	atpull"%atclone" atclone"_fix-omz-plugin" OMZP::git-prompt \
+	atpull"%atclone" atclone"_fix-omz-plugin" OMZP::docker \
+	atpull"%atclone" atclone"_fix-omz-plugin" OMZP::docker-compose \
+	atpull"%atclone" atclone"_fix-omz-plugin" OMZP::extract \
+	atpull"%atclone" atclone"_fix-omz-plugin" OMZP::pip \
+	atpull"%atclone" atclone"_fix-omz-plugin" OMZP::yarn \
+	atpull"%atclone" atclone"_fix-omz-plugin" OMZP::z \
+	atpull"%atclone" atclone"_fix-omz-plugin" OMZP::golang \
+	atpull"%atclone" atclone"_fix-omz-plugin" OMZP::shell-proxy
 
 # Theme
 zinit ice depth="1"

@@ -1,3 +1,5 @@
+# Zinit init
+source /usr/share/zinit/zinit.zsh
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -5,14 +7,17 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Zinit init
-source /usr/share/zinit/zinit.zsh
 
 ####
 # oh-my-zsh libs
-zinit snippet OMZ::lib/completion.zsh
-zinit snippet OMZ::lib/history.zsh
-zinit snippet OMZ::lib/git.zsh
+zinit snippet OMZL::completion.zsh
+zinit snippet OMZL::clipboard.zsh
+zinit snippet OMZL::correction.zsh
+zinit snippet OMZL::directories.zsh
+zinit snippet OMZL::grep.zsh
+zinit snippet OMZL::nvm.zsh
+zinit snippet OMZL::history.zsh
+zinit snippet OMZL::git.zsh
 
 ####
 # oh-my-zsh plugins
@@ -22,8 +27,9 @@ zinit snippet OMZP::cp
 zinit snippet OMZP::vscode
 zinit snippet OMZP::encode64
 zinit snippet OMZP::npm
+zinit ice atload"unalias grv"
 zinit snippet OMZP::git
-# zinit snippet OMZP::git-commit
+zinit snippet OMZP::git-commit
 zinit snippet OMZP::node
 zinit snippet OMZP::docker
 zinit snippet OMZP::docker-compose
@@ -46,17 +52,17 @@ zinit ice depth="1"
 zinit light romkatv/powerlevel10k
 
 # Plugins
+
+zinit light zdharma-continuum/fast-syntax-highlighting
+zinit light zsh-users/zsh-completions
+zinit light zsh-users/zsh-autosuggestions
+zinit light zsh-users/zsh-history-substring-search
+zinit light marlonrichert/zsh-autocomplete
 zinit light arzzen/calc.plugin.zsh
-zinit light zpm-zsh/clipboard
 zinit light aubreypwd/zsh-plugin-download
 zinit light oz/safe-paste
 zinit light wbingli/zsh-wakatime
-zinit light zsh-users/zsh-completions
-zinit light marlonrichert/zsh-autocomplete
-zinit light zsh-users/zsh-autosuggestions
-zinit light zsh-users/zsh-history-substring-search
-zinit ice wait lucid
-zinit light zdharma-continuum/fast-syntax-highlighting
+
 # Yi Yan
 # zinit ice lucid wait=0
 # zinit light derry96/hitokoto
@@ -65,6 +71,9 @@ zinit light zdharma-continuum/fast-syntax-highlighting
 # Completion
 autoload -Uz compinit
 compinit
+
+# Binding Keys
+bindkey '^I' menu-complete
 
 
 # Alias

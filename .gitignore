@@ -29,6 +29,7 @@
 !.config/dolphinrc
 !.config/htop
 !.config/swaylock
+!.config/fontconfig
 # wallpaper
 Pictures/*
 !Pictures

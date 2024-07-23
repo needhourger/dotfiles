@@ -4,6 +4,7 @@
 !.gitignore
 !.github
 !.zshrc
+!.p10k.zsh
 !.pip
 !.gtkrc-2.0
 !.dircolors

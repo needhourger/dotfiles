@@ -60,7 +60,6 @@ zinit snippet OMZP::nvm
 zinit snippet OMZP::git
 zinit snippet OMZP::git-commit
 zinit wait lucid for \
-	atpull"%atclone" atclone"_fix-omz-plugin" OMZP::git-prompt \
 	atpull"%atclone" atclone"_fix-omz-plugin" OMZP::docker \
 	atpull"%atclone" atclone"_fix-omz-plugin" OMZP::docker-compose \
 	atpull"%atclone" atclone"_fix-omz-plugin" OMZP::extract \

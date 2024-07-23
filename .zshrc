@@ -76,6 +76,7 @@ zinit light romkatv/powerlevel10k
 # Plugins
 
 zinit light zdharma-continuum/fast-syntax-highlighting
+zinit light dracula/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-history-substring-search

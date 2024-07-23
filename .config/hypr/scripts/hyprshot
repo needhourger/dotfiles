@@ -28,7 +28,7 @@ Options:
   -- [command]              open screenshot with a command of your choosing. e.g. hyprshot -m window -- mirage
 
 Modes:
-  all			takke screenshot of all monitors
+  all			take screenshot of all monitors
   output        take screenshot of an entire monitor
   window        take screenshot of an open window
   region        take screenshot of selected region
@@ -123,7 +123,7 @@ function save_all() {
 
 function save_geometry() {
     Print "Geometry: %s\n" "${1}"
-    local cropped_geometry=`trim "${1}"`
+    local cropped_geometry="${1}"
     Print "Crop: %s\n" "${cropped_geometry}"
     local output=""
 

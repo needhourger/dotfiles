@@ -8,6 +8,7 @@
 !.pip
 !.gtkrc-2.0
 !.dircolors
+!.asoundrc
 # config file
 .config/*
 !.config

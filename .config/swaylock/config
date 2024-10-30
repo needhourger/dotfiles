@@ -3,9 +3,21 @@ show-failed-attempts
 daemonize
 
 # Appearance
-image=$HOME/Pictures/Wallpapers/wallhaven-vq3xd3.jpg
+# image=$HOME/Pictures/Wallpapers/wallhaven-vq3xd3.jpg
+# swaylock-effects
+screenshots
+clock
+text-caps-lock=大写喵？
+text-ver=喵...
+text-wrong=喵？
+text-clear=喵,空惹
+effect-blur=20x5
+# swaylock
 scaling=fill
-indicator-radius=50
+indicator
+indicator-radius=100
+indicator-thickness=10
+fade-in=0.1
 line-color=FFFFFF00
 ring-color=BD93F9
 inside-color=282A3666
@@ -26,3 +38,5 @@ ring-clear-color=8BE9FD
 line-clear-color=8BE9FD
 line-wrong-color=282A36
 bs-hl-color=8BE9F
+
+

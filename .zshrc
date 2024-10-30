@@ -54,7 +54,6 @@ zinit snippet OMZP::npm
 zinit snippet OMZP::node
 zinit snippet OMZP::kitty
 zinit snippet OMZP::qrcode
-zinit snippet OMZP::web-search
 zinit snippet OMZP::thefuck
 zinit snippet OMZP::nvm
 zinit snippet OMZP::git
@@ -112,8 +111,21 @@ alias neofetch='neofetch | lolcat'
 # Nvm node environment
 source /usr/share/nvm/init-nvm.sh
 
-# Miniconda3
-[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
-
 # Environment variable
 export PATH=$PATH:/home/yuuki/.go/bin
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/yuuki/.conda/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/yuuki/.conda/etc/profile.d/conda.sh" ]; then
+        . "/home/yuuki/.conda/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/yuuki/.conda/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

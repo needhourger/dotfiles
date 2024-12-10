@@ -31,10 +31,14 @@ return require('packer').startup(function(use)
 	cond = [[not vim.g.vscode]]
   }
 
+  -- Status column
   use { 'luukvbaal/statuscol.nvim',
 	config = function()
 		require("statuscol").setup({
 			setopt = true,
+			thousands = true,
+			relculright = true,
+
 		})
 	end,
 	cond = [[not vim.g.vscode]]
@@ -53,10 +57,21 @@ return require('packer').startup(function(use)
 	cond = [[not vim.g.vscode]]
   }
 
+  -- Bufferline
   use {
     'akinsho/bufferline.nvim',
     tag = "v2.*",
     requires = 'kyazdani42/nvim-web-devicons',
 	cond = [[not vim.g.vscode]]
   }
+
+  -- Treesitter
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = function()
+		local ts_update = requrie('nvim-treesitter.install').update({with_sync=true})
+		ts_update()
+	end,
+  }
+
 end)

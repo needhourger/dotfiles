@@ -4,5 +4,6 @@ return {
     require('smoothcursor').setup({
       fancy = { enable = true }
     })
-  end
+  end,
+  cond = function() return not vim.g.vscode end
 }

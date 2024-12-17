@@ -174,5 +174,6 @@ return {
     keyset("n", "<space>k", ":<C-u>CocPrev<cr>", opts)
     -- Resume latest coc list
     keyset("n", "<space>p", ":<C-u>CocListResume<cr>", opts)
-  end
+  end,
+  cond = function() return not vim.g.vscode end
 }

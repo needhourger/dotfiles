@@ -15,5 +15,6 @@ return {
         Misc = { color = colors.purple },
       }
     })
-  end
+  end,
+  cond = function() return not vim.g.vscode end
 }

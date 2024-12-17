@@ -9,4 +9,5 @@ return {
     -- `matchparen.vim` needs to be disabled manually in case of lazy loading
     vim.g.loaded_matchparen = 1
   end,
+  cond = function() return not vim.g.vscode end
 }

@@ -7,5 +7,6 @@ return {
        transparent = true,
     })
     vim.cmd("colorscheme cyberdream")
-  end
+  end,
+  cond = function() return not vim.g.vscode end
 }

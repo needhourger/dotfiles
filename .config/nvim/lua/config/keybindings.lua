@@ -4,6 +4,8 @@ vim.g.maplocalleader = " "
 local map = vim.api.nvim_set_keymap
 local opt = {noremap = true, silent = true}
 -- aident
+map("n","<","<<",opt)
+map("n",">",">>",opt)
 map('v','<','<gv',opt)
 map('v','>','>gv',opt)
 -- Split screen
@@ -16,3 +18,4 @@ map("n", "< -h>", "<C-w>h", opt)
 map("n", "< -j>", "<C-w>j", opt)
 map("n", "< -k>", "<C-w>k", opt)
 map("n", "< -l>", "<C-w>l", opt)
+

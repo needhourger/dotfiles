@@ -79,7 +79,7 @@ zinit light dracula/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-history-substring-search
-zinit light marlonrichert/zsh-autocomplete
+#zinit light marlonrichert/zsh-autocomplete
 zinit light arzzen/calc.plugin.zsh
 zinit light aubreypwd/zsh-plugin-download
 zinit light oz/safe-paste
@@ -104,6 +104,8 @@ alias ls="ls --color=auto"
 alias ll="ls -lahF --color --time-style=long-iso"
 alias gitc='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias neofetch='neofetch | lolcat'
+alias ssh='kitty +kitten ssh'
+alias kiff='kitty +kitten diff'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -129,3 +131,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+## autocomplete settings
+zstyle ':autocomplete:*' delay 0.1  # seconds (float)

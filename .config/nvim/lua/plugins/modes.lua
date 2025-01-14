@@ -4,4 +4,5 @@ return {
   config = function()
     require("modes").setup()  
   end,
+  cond = function() return not vim.g.vscode end
 }

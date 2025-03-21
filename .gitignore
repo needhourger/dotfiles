@@ -9,6 +9,7 @@
 !.gtkrc-2.0
 !.dircolors
 !.asoundrc
+
 # config file
 .config/*
 !.config
@@ -32,6 +33,14 @@
 !.config/htop
 !.config/swaylock
 !.config/fontconfig
+
+# local file
+.local/*
+!.local
+#detail local file
+!.local/share/fcitx5/rime/default.custom.yaml
+!.local/share/fcitx5/rime/rime_ice.custom.yaml
+
 # wallpaper
 Pictures/*
 !Pictures

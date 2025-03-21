@@ -38,7 +38,7 @@ zinit snippet OMZL::clipboard.zsh
 zinit snippet OMZL::correction.zsh
 zinit snippet OMZL::directories.zsh
 zinit snippet OMZL::grep.zsh
-zinit snippet OMZL::nvm.zsh
+# zinit snippet OMZL::nvm.zsh # 500ms at least
 zinit snippet OMZL::history.zsh
 zinit snippet OMZL::git.zsh
 zinit snippet OMZL::prompt_info_functions.zsh
@@ -55,7 +55,7 @@ zinit snippet OMZP::node
 zinit snippet OMZP::kitty
 zinit snippet OMZP::qrcode
 zinit snippet OMZP::thefuck
-zinit snippet OMZP::nvm
+# zinit snippet OMZP::nvm # 500ms at least
 zinit snippet OMZP::git
 zinit snippet OMZP::git-commit
 zinit wait lucid for \

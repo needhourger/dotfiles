@@ -35,14 +35,17 @@
 !.config/fontconfig
 
 # local file
+!.local
 .local/*
 !.local/share/
+.local/share/*
 !.local/share/fcitx5/
+.local/share/fcitx5/*
 !.local/share/fcitx5/rime/
+.local/share/fcitx5/rime/*
 #detail local file
 !.local/share/fcitx5/rime/default.custom.yaml
 !.local/share/fcitx5/rime/rime_ice.custom.yaml
-.local/share/fcitx5/rime/*
 
 # wallpaper
 Pictures/*

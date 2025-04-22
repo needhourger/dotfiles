@@ -31,7 +31,6 @@
 !.config/kdeglobals
 !.config/dolphinrc
 !.config/htop
-!.config/swaylock
 !.config/fontconfig
 
 # local file
@@ -39,6 +38,7 @@
 .local/*
 !.local/share/
 .local/share/*
+!.local/share/fonts
 !.local/share/fcitx5/
 .local/share/fcitx5/*
 !.local/share/fcitx5/rime/

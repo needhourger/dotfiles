@@ -8,3 +8,8 @@ patch:
       # 开启逗号句号翻页
       - { when: paging, accept: comma, send: Page_Up }
       - { when: has_menu, accept: period, send: Page_Down }
+  ascii_composer:
+    switch_key:
+      Shift_L: commit_code
+      Shift_R: inline_ascii
+      Caps_Lock: clear

@@ -133,3 +133,6 @@ unset __conda_setup
 
 ## autocomplete settings
 zstyle ':autocomplete:*' delay 0.1  # seconds (float)
+
+# bun completions
+[ -s "/home/yuuki/.bun/_bun" ] && source "/home/yuuki/.bun/_bun"

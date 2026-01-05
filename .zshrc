@@ -136,3 +136,11 @@ zstyle ':autocomplete:*' delay 0.1  # seconds (float)
 
 # bun completions
 [ -s "/home/yuuki/.bun/_bun" ] && source "/home/yuuki/.bun/_bun"
+
+# pnpm
+export PNPM_HOME="/home/yuuki/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

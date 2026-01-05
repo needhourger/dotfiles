@@ -9,7 +9,10 @@ patch:
       - { when: paging, accept: comma, send: Page_Up }
       - { when: has_menu, accept: period, send: Page_Down }
   ascii_composer:
+    good_old_caps_lock: true
     switch_key:
       Shift_L: commit_code
       Shift_R: inline_ascii
       Caps_Lock: clear
+  menu:
+    page_size: 6

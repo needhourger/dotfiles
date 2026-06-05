@@ -14,11 +14,10 @@
   ],
   "modules-right": [
     "network",
-	"cpu",
+    "cpu",
     "tray",
     "memory",
     "disk",
-	"bluetooth",
     "group/hardware"
   ],
   "spacing": 0,

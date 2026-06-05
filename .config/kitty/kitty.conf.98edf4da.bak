@@ -2652,4 +2652,3 @@ dim_opacity 0.75
 # Dracula
 include current-theme.conf
 # END_KITTY_THEME
-map shift+enter send_text all \e\r

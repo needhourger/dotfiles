@@ -106,6 +106,7 @@ alias gitc='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias neofetch='neofetch | lolcat'
 alias ssh='kitty +kitten ssh'
 alias kiff='kitty +kitten diff'
+alias start-claude='sh ~/Documents/claude.sh'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

@@ -18,4 +18,3 @@ map("n", "< -h>", "<C-w>h", opt)
 map("n", "< -j>", "<C-w>j", opt)
 map("n", "< -k>", "<C-w>k", opt)
 map("n", "< -l>", "<C-w>l", opt)
-

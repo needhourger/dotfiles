@@ -1,0 +1,83 @@
+# `sheldon` configuration file
+# ----------------------------
+#
+# You can modify this file directly or you can use one of the following
+# `sheldon` commands which are provided to assist in editing the config file:
+#
+# - `sheldon add` to add a new plugin to the config file
+# - `sheldon edit` to open up the config file in the default editor
+# - `sheldon remove` to remove a plugin from the config file
+#
+# See the documentation for more https://github.com/rossmacarthur/sheldon#readme
+
+
+shell = "zsh"
+
+[plugins]
+
+# For example:
+#
+# [plugins.base16]
+# github = "chriskempson/base16-shell"
+
+
+# 1. 基础缓存初始化
+[plugins.omz-cache-init]
+inline = 'export ZSH_CACHE_DIR="${XDG_CACHE_HOME:-$HOME/.cache}/ohmyzsh"; mkdir -p "$ZSH_CACHE_DIR/completions"'
+
+# 2. 主题
+[plugins.powerlevel10k]
+github = "romkatv/powerlevel10k"
+
+# 3. 正确加载 Oh My Zsh 的自带插件 (使用 use 匹配子目录)
+[plugins.omz-plugins]
+github = "ohmyzsh/ohmyzsh"
+use = [
+    "plugins/archlinux/*.plugin.zsh",
+    "plugins/sudo/*.plugin.zsh",
+    "plugins/cp/*.plugin.zsh",
+    "plugins/vscode/*.plugin.zsh",
+    "plugins/encode64/*.plugin.zsh",
+    "plugins/npm/*.plugin.zsh",
+    "plugins/node/*.plugin.zsh",
+    "plugins/kitty/*.plugin.zsh",
+    "plugins/qrcode/*.plugin.zsh",
+    "plugins/extract/*.plugin.zsh",
+    "plugins/docker/*.plugin.zsh",
+    "plugins/docker-compose/*.plugin.zsh",
+    "plugins/pip/*.plugin.zsh",
+    "plugins/yarn/*.plugin.zsh",
+    "plugins/z/*.plugin.zsh",
+    "plugins/golang/*.plugin.zsh",
+    "plugins/shell-proxy/*.plugin.zsh"
+]
+
+# 4. 其他独立插件
+[plugins.calc-plugin]
+github = "arzzen/calc.plugin.zsh"
+
+[plugins.zsh-plugin-download]
+github = "aubreypwd/zsh-plugin-download"
+
+[plugins.safe-paste]
+github = "oz/safe-paste"
+
+[plugins.zsh-wakatime]
+github = "wbingli/zsh-wakatime"
+
+[plugins.zsh-completions]
+github = "zsh-users/zsh-completions"
+
+# 5. 交互与高亮插件
+[plugins.fast-syntax-highlighting]
+github = "zdharma-continuum/fast-syntax-highlighting"
+
+[plugins.dracula-syntax-theme]
+github = "dracula/zsh-syntax-highlighting"
+
+[plugins.zsh-autosuggestions]
+github = "zsh-users/zsh-autosuggestions"
+
+[plugins.zsh-history-substring-search]
+github = "zsh-users/zsh-history-substring-search"
+

@@ -51,4 +51,5 @@ alias kiff='kitty +kitten diff'
 eval "$(sheldon source)"
 
 ## fnm node environment management
+export FNM_NODE_DIST_MIRROR=https://mirrors.cernet.edu.cn/nodejs-release/
 eval "$(fnm env --use-on-cd --shell zsh)"

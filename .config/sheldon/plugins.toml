@@ -76,7 +76,7 @@ github = "zdharma-continuum/fast-syntax-highlighting"
 github = "dracula/zsh-syntax-highlighting"
 
 [plugins.zsh-autosuggestions]
-github = "zsh-users/zsh-autosuggestions"
+github = "marlonrichert/zsh-autocomplete"
 
 [plugins.zsh-history-substring-search]
 github = "zsh-users/zsh-history-substring-search"

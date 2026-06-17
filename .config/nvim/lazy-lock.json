@@ -1,4 +1,5 @@
 {
+  "SmoothCursor.nvim": { "branch": "main", "commit": "12518b284e1e3f7c6c703b346815968e1620bee2" },
   "coc.nvim": { "branch": "release", "commit": "6535506db1d0f8462ba668b5ca27e15e7f406598" },
   "cyberdream.nvim": { "branch": "main", "commit": "4da5ba201fbfcd886fa9ab34daae9472f564c0d9" },
   "cybu.nvim": { "branch": "main", "commit": "2dff010394208a0e880c46e06735f9d5f5272aaa" },

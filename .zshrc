@@ -53,3 +53,11 @@ eval "$(sheldon source)"
 ## fnm node environment management
 export FNM_NODE_DIST_MIRROR=https://mirrors.cernet.edu.cn/nodejs-release/
 eval "$(fnm env --use-on-cd --shell zsh)"
+
+# pnpm
+export PNPM_HOME="/home/yuuki/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME/bin:"*) ;;
+  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
+esac
+# pnpm end

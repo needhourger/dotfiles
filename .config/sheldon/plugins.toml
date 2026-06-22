@@ -65,19 +65,24 @@ github = "oz/safe-paste"
 [plugins.zsh-wakatime]
 github = "wbingli/zsh-wakatime"
 
+# 5. 交互与高亮插件
+[plugins.zsh-autosuggestions]
+github = "zsh-users/zsh-autosuggestions"
+
 [plugins.zsh-completions]
 github = "zsh-users/zsh-completions"
 
-# 5. 交互与高亮插件
+[plugins.zsh-history-substring-search]
+github = "zsh-users/zsh-history-substring-search"
+
 [plugins.fast-syntax-highlighting]
 github = "zdharma-continuum/fast-syntax-highlighting"
 
 [plugins.dracula-syntax-theme]
 github = "dracula/zsh-syntax-highlighting"
 
-[plugins.zsh-autosuggestions]
+[plugins.zsh-autocomplete]
 github = "marlonrichert/zsh-autocomplete"
 
-[plugins.zsh-history-substring-search]
-github = "zsh-users/zsh-history-substring-search"
+
 

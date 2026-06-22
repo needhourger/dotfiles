@@ -89,7 +89,7 @@ button:hover {
 #scratchpad,
 #power-profiles-daemon,
 #mpd {
-  padding: 0 8px;
+  padding: 0 4px;
   color: #ffffff;
 }
 
@@ -344,4 +344,8 @@ label:focus {
 #custom-notification {
   padding: 0 5px;
   background-color: #5bcefa;
+}
+
+#upower {
+  padding: 0 4px;
 }

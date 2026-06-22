@@ -109,3 +109,11 @@ hl.window_rule({
     float = true,
     center = true
 })
+
+hl.window_rule({
+    name = "linuxqq-chat-history",
+    match = { class = "QQ", title = ".*的聊天记录"},
+    
+    float = true,
+    center = true
+})

@@ -46,6 +46,7 @@ alias gitc='/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME'
 alias fastfetch='fastfetch | lolcat'
 alias ssh='kitty +kitten ssh'
 alias kiff='kitty +kitten diff'
+# alias docker='sudo docker'
 
 ## Sheldon plugins
 eval "$(sheldon source)"

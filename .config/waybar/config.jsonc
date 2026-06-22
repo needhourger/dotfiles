@@ -4,7 +4,7 @@
   "position": "top", // Waybar position (top|bottom|left|right)
   // "height": 30, // Waybar height (to be removed for auto height)
   // "width": 1280, // Waybar width
-  "spacing": 0, // Gaps between modules (4px)
+  "spacing": 4, // Gaps between modules (4px)
   // Choose the order of the modules
   "modules-left": [
     "hyprland/workspaces",
@@ -22,7 +22,8 @@
     "network",
     "pulseaudio",
     "tray",
-    "upower"
+    "upower",
+    "custom/notification"
   ],
   // Modules configuration
   "hyprland/workspaces": {
@@ -227,5 +228,25 @@
     "format":"{percentage}",
     "format-alt": "{percentage}% {time}",
     "show-icon": true
+  },
+  "custom/notification": {
+    "tooltip": true,
+    "format": "<span size='16pt'>{icon}</span>",
+    "format-icons": {
+      "notification": "󱅫",
+      "none": "󰂜",
+      "dnd-notification": "󰂠",
+      "dnd-none": "󰪓",
+      "inhibited-notification": "󰂛",
+      "inhibited-none": "󰪑",
+      "dnd-inhibited-notification": "󰂛",
+      "dnd-inhibited-none": "󰪑"
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
   }
 }
